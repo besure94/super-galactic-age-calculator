@@ -20,4 +20,12 @@ describe('SolarYears', () => {
     expect(solarYears.marsYears).toEqual(21.28);
     expect(solarYears.jupiterYears).toEqual(3.37);
   });
+  test('should contain a method that can determine how many years have passed on each planet since the users past birthday', () => {
+    solarYears.howManyYearsSincePastBday(40, 35);
+    expect(solarYears.earthYears).toEqual(5);
+    expect(solarYears.mercuryYears).toEqual(20.83);
+    expect(solarYears.venusYears).toEqual(8.06);
+    expect(solarYears.marsYears).toEqual(2.66);
+    expect(solarYears.jupiterYears).toEqual(0.42);
+  });
 });
