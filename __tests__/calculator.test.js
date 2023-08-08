@@ -7,7 +7,7 @@ describe('Calculator', () => {
     reusableCalculator = new Calculator();
   });
 
-  test('should create a calculator object with four properties, with each one being a 0', () => {
+  test('should create a calculator object with four properties, with each property being a 0', () => {
     expect(reusableCalculator.mercuryYears).toEqual(0);
     expect(reusableCalculator.venusYears).toEqual(0);
     expect(reusableCalculator.marsYears).toEqual(0);
