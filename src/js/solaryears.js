@@ -21,4 +21,8 @@ export class SolarYears {
     this.marsYears = parseFloat(((userAge - pastBdayAge) / 1.88).toFixed(2));
     this.jupiterYears = parseFloat(((userAge - pastBdayAge) / 11.86).toFixed(2));
   }
+
+  howManyYearsUntilFutureBday(userAge, futureBdayAge) {
+
+  }
 }
