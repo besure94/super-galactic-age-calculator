@@ -7,8 +7,8 @@ export class SolarYears {
   }
 
   calculateSolarYears(userAge) {
-    this.mercuryYears = parseFloat((userAge / .24).toFixed(2));
-    this.venusYears = parseFloat((userAge / .62).toFixed(2));
+    this.mercuryYears = parseFloat((userAge / 0.24).toFixed(2));
+    this.venusYears = parseFloat((userAge / 0.62).toFixed(2));
     this.marsYears = parseFloat((userAge / 1.88).toFixed(2));
     this.jupiterYears = parseFloat((userAge / 11.86).toFixed(2));
   }
