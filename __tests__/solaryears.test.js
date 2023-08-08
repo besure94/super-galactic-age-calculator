@@ -1,6 +1,6 @@
 import { SolarYears } from '../src/js/solaryears.js';
 
-describe('Calculator', () => {
+describe('SolarYears', () => {
   let solarYears;
 
   beforeEach(() => {
