@@ -5,4 +5,8 @@ export class SolarYears {
     this.marsYears = 0;
     this.jupiterYears = 0;
   }
+
+  calculateSolarYears(userAge) {
+
+  }
 }
