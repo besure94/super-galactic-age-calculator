@@ -12,6 +12,15 @@ function handleSolarYearsForm(event) {
   const pastBdayAge = parseInt(document.querySelector('#pastBdayAge').value);
   const futureBdayAge = parseInt(document.querySelector('#futureBdayAge').value);
   const solarYears = new SolarYears();
+  const ageInSolarYears = solarYears.calculateSolarYears(userAge);
+  const solarYearsSinceLastBday = solarYears.howManyYearsSincePastBday(pastBdayAge, futureBdayAge);
+  const solarYearsUntilFutureBday = solarYears.howManyYearsUntilFutureBday(futureBdayAge, userAge);
+  const pTagOne = document.createElement("p");
+  const pTagTwo = document.createElement("p");
+  const pTagThree = document.createElement("p");
+  pTagOne.append(`Your age in solar years is: ${ageInSolarYears}.`);
+  pTagTwo.append(`The number of solar years since your past birthday and current age is: ${solarYearsSinceLastBday}.`);
+  pTagThree.append(`The number of solar years from your current age to your future birthday is: ${solarYearsUntilFutureBday}.`);
 }
 
 window.addEventListener("load", function() {
