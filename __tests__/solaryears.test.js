@@ -30,7 +30,7 @@ describe('SolarYears', () => {
     expect(solarYears.jupiterYears).toEqual(0.42);
   });
   test('should contain a method that can determine how many years have yet to pass until the users future birthday, for each planet', () => {
-    solarYears.howManyYearsUntilFutureBday(40, 50);
+    solarYears.howManyYearsUntilFutureBday(50, 40);
     expect(solarYears.earthYears).toEqual(10);
     expect(solarYears.mercuryYears).toEqual(41.67);
     expect(solarYears.venusYears).toEqual(16.13);
