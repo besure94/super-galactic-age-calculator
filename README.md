@@ -23,10 +23,11 @@ This application determines a users age based on a planets solar years. It will 
 
 * Select the green "Use this template" button and select "create a new repository".
 * Clone the new repository to your desktop and open it in VS Code.
-* In the terminal, go to your project folder and run the command $ npm install to install node_modules.
-* Run the command $ npm run build to bundle together JS files.
-* Enter the command $ npm run lint to check for errors.
-* Enter the command $ npm run test to test business logic.
+* Open a new terminal, go to the root directory, and run the command $ npm install to install node_modules.
+* In the root directory, run the command $ npm run build to bundle together JS files.
+* In the root directory, run the command $ npm run start to start a live development server. However, note that this application does not have a functional user interface yet.
+* In the root directory, enter the command $ npm run lint to check code for errors.
+* In the root directory, enter the command $ npm run test to test business logic.
 
 ## Known Bugs
 
