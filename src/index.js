@@ -1,0 +1,1 @@
+import { SolarYears } from "./js/solaryears";
