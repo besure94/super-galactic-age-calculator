@@ -4,7 +4,7 @@ describe('SolarYears', () => {
   let solarYears;
 
   beforeEach(() => {
-    solarYears = new SolarYears();
+    solarYears = new SolarYears(45);
   });
 
   test('should create a SolarYears object with a property for the users age, five properties for the users age in solar years for each planet, and four properties for the amount of solar years equivalent to one Earth year for each planet', () => {
