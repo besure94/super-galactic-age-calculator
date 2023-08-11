@@ -28,11 +28,11 @@ export class SolarYears {
     this.jupiterYearsPast = parseFloat(((this.userAge - pastBdayAge) / this.jupiterRate).toFixed(2));
   }
 
-  howManyYearsUntilFutureBday(futureBdayAge, userAge) {
-    this.mercuryYears = parseFloat(((futureBdayAge - userAge) / 0.24).toFixed(2));
-    this.venusYears = parseFloat(((futureBdayAge - userAge) / 0.62).toFixed(2));
-    this.earthYears = parseInt((futureBdayAge - userAge));
-    this.marsYears = parseFloat(((futureBdayAge - userAge) / 1.88).toFixed(2));
-    this.jupiterYears = parseFloat(((futureBdayAge - userAge) / 11.86).toFixed(2));
+  howManyYearsUntilFutureBday(futureBdayAge) {
+    this.mercuryYearsFuture = parseFloat(((futureBdayAge - this.userAge) / this.mercuryRate).toFixed(2));
+    this.venusYearsFuture = parseFloat(((futureBdayAge - this.userAge) / this.venusRate).toFixed(2));
+    this.earthYearsFuture = parseInt((futureBdayAge - this.userAge));
+    this.marsYearsFuture = parseFloat(((futureBdayAge - this.userAge) / this.marsRate).toFixed(2));
+    this.jupiterYearsFuture = parseFloat(((futureBdayAge - this.userAge) / this.jupiterRate).toFixed(2));
   }
 }
