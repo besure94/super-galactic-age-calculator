@@ -1,10 +1,15 @@
 export class SolarYears {
-  constructor() {
+  constructor(userAge) {
+    this.userAge = userAge;
     this.mercuryYears = 0;
     this.venusYears = 0;
     this.earthYears = 0;
     this.marsYears = 0;
     this.jupiterYears = 0;
+    this.mercuryRate = 0.24;
+    this.venusRate = 0.62;
+    this.marsRate = 1.88;
+    this.jupiterRate = 11.86;
   }
 
   calculateSolarYears(userAge) {
