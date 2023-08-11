@@ -19,7 +19,7 @@ describe('SolarYears', () => {
     expect(solarYears.marsRate).toEqual(1.88);
     expect(solarYears.jupiterRate).toEqual(11.86);
   });
-  test('should contain a method that returns the users age in solar years for each of the four planets', () => {
+  test('should contain a method that returns the users age in solar years for each planet', () => {
     solarYears.calculateSolarYears();
     expect(solarYears.mercuryYears).toEqual(166.67);
     expect(solarYears.venusYears).toEqual(64.52);
