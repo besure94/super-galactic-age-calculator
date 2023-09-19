@@ -5,25 +5,31 @@ import { SolarYears } from './js/solaryears.js';
 
 function handleSolarYearsForm(event) {
   event.preventDefault();
-  document.querySelector('#ageCalculations').innerText = null;
-  document.querySelector('#pastBdayCalculations').innerText = null;
-  document.querySelector('#futureBdayCalculations').innerText = null;
   const ageOfUser = parseInt(document.querySelector('#userAge').value);
   const pastBirthdayAge = parseInt(document.querySelector('#pastBdayAge').value);
   const futureBirthdayAge = parseInt(document.querySelector('#futureBdayAge').value);
-  const solarYears = new SolarYears();
-  const ageInSolarYears = solarYears.calculateSolarYears(ageOfUser);
-  const solarYearsSinceLastBday = solarYears.howManyYearsSincePastBday(ageOfUser, pastBirthdayAge);
-  const solarYearsUntilFutureBday = solarYears.howManyYearsUntilFutureBday(futureBirthdayAge, ageOfUser);
-  const pTagOne = document.createElement("p");
-  const pTagTwo = document.createElement("p");
-  const pTagThree = document.createElement("p");
-  pTagOne.append(`Your age in solar years is: ${ageInSolarYears}.`);
-  pTagTwo.append(`The number of solar years since your past birthday and current age is: ${solarYearsSinceLastBday}.`);
-  pTagThree.append(`The number of solar years from your current age to your future birthday is: ${solarYearsUntilFutureBday}.`);
-  document.querySelector('#ageCalculations').append(pTagOne);
-  document.querySelector('#pastBdayCalculations').append(pTagTwo);
-  document.querySelector('#futureBdayCalculations').append(pTagThree);
+  const solarYears = new SolarYears(ageOfUser);
+  solarYears.calculateSolarYears();
+  solarYears.howManyYearsSincePastBday(pastBirthdayAge);
+  solarYears.howManyYearsUntilFutureBday(futureBirthdayAge);
+  const earthYears = solarYears.earthYears;
+  const earthYearsPast = solarYears.earthYearsPast;
+  const earthYearsFuture = solarYears.earthYearsFuture;
+  const jupiterYears = solarYears.jupiterYears;
+  const jupiterYearsPast = solarYears.jupiterYearsPast;
+  const jupiterYearsFuture = solarYears.jupiterYearsFuture;
+  const marsYears = solarYears.marsYears;
+  const marsYearsPast = solarYears.marsYearsPast;
+  const marsYearsFuture = solarYears.marsYearsFuture;
+  const mercuryYears = solarYears.mercuryYears;
+  const mercuryYearsPast = solarYears.mercuryYearsPast;
+  const mercuryYearsFuture = solarYears.mercuryYearsFuture;
+  const venusYears = solarYears.venusYears;
+  const venusYearsPast = solarYears.venusYearsPast;
+  const venusYearsFuture = solarYears.venusYearsFuture;
+  document.querySelector('#ageCalculations').innerText = `You are ${earthYears} years old. \n Your age in Mercury years is ${mercuryYears}. \n Your age in Venus years is ${venusYears}. \n Your age in Mars years is ${marsYears}. \n Your age in Jupiter years is ${jupiterYears}.`;
+  document.querySelector('#pastBdayCalculations').innerText = `It has been ${earthYearsPast} years since your past birthday. \n It has been ${mercuryYearsPast} Mercury years since your past birthday. \n It has been ${venusYearsPast} Venus years since your past birthday. \n It has been ${marsYearsPast} Mars years since your past birthday. \n It has been ${jupiterYearsPast} Jupiter years since your past birthday.`;
+  document.querySelector('#futureBdayCalculations').innerText = `It will be ${earthYearsFuture} years until your future birthday. \n It will be ${mercuryYearsFuture} Mercury years until your future birthday. \n It will be ${venusYearsFuture} Venus years until your future birthday. \n It will be ${marsYearsFuture} Mars years until your future birthday. \n It will be ${jupiterYearsFuture} Jupiter years until your future birthday.`;
 }
 
 window.addEventListener("load", function() {

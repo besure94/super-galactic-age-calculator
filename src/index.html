@@ -4,18 +4,23 @@
     <title>Super Galactic Age Calculator</title>
   </head>
   <body>
-    <h3>Enter your age to determine your age in solar years!</h3>
-    <form id="galactic-age-checker-form">
-      <label for="userAge">Enter your age:</label>
-      <input id="userAge" type="number" min="0">
-      <label for="pastBdayAge">Enter your age for any past birthday:</label>
-      <input id="pastBdayAge" type="number" min="0">
-      <label for="futureBdayAge">Enter your age for any future birthday:</label>
-      <input id="futureBdayAge" type="number" min="0">
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="ageCalculations"></ul>
-    <ul id="pastBdayCalculations"></ul>
-    <ul id="futureBdayCalculations"></ul>
+    <div class="container">
+      <h1>Enter your age to determine your age in solar years!</h1>
+      <form id="galactic-age-checker-form">
+        <label for="userAge">Enter your age:</label>
+        <input id="userAge" type="number" min="0">
+        <br>
+        <label for="pastBdayAge">Enter your age for any past birthday:</label>
+        <input id="pastBdayAge" type="number" min="0">
+        <br>
+        <label for="futureBdayAge">Enter your age for any future birthday:</label>
+        <input id="futureBdayAge" type="number" min="0">
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="ageCalculations"></p>
+      <p id="pastBdayCalculations"></p>
+      <p id="futureBdayCalculations"></p>
+    </div>
   </body>
 </html>
