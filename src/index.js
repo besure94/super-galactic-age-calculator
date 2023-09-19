@@ -27,7 +27,7 @@ function handleSolarYearsForm(event) {
   const venusYears = solarYears.venusYears;
   const venusYearsPast = solarYears.venusYearsPast;
   const venusYearsFuture = solarYears.venusYearsFuture;
-  document.querySelector('#ageCalculations').innerText = `You are ${earthYears} years old. \n Your age in Mercury years is ${mercuryYears}. \n Your age in Venus years is ${venusYears}. \n Your age in Mars years is ${marsYears}. \n Your age in Jupiter years is ${jupiterYears}.`;
+  document.querySelector('#ageCalculations').innerText = `You are ${earthYears} years old. \n You are ${mercuryYears} years old on Mercury. \n You are ${venusYears} years old on Venus. \n You are ${marsYears} years old on Mars. \n You are ${jupiterYears} years old on Jupiter.`;
   document.querySelector('#pastBdayCalculations').innerText = `It has been ${earthYearsPast} years since your past birthday. \n It has been ${mercuryYearsPast} Mercury years since your past birthday. \n It has been ${venusYearsPast} Venus years since your past birthday. \n It has been ${marsYearsPast} Mars years since your past birthday. \n It has been ${jupiterYearsPast} Jupiter years since your past birthday.`;
   document.querySelector('#futureBdayCalculations').innerText = `It will be ${earthYearsFuture} years until your future birthday. \n It will be ${mercuryYearsFuture} Mercury years until your future birthday. \n It will be ${venusYearsFuture} Venus years until your future birthday. \n It will be ${marsYearsFuture} Mars years until your future birthday. \n It will be ${jupiterYearsFuture} Jupiter years until your future birthday.`;
 }
