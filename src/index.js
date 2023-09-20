@@ -10,8 +10,17 @@ function handleSolarYearsForm(event) {
   const futureBirthdayAge = parseInt(document.querySelector('#futureBdayAge').value);
   const solarYears = new SolarYears(ageOfUser);
   solarYears.calculateSolarYears();
-  solarYears.howManyYearsSincePastBday(pastBirthdayAge);
-  solarYears.howManyYearsUntilFutureBday(futureBirthdayAge);
+  // writing 'if' statement to account for edge case of a user entering a past bday or future bday age that is older or younger than their current age.
+  if (ageOfUser > pastBirthdayAge && futureBirthdayAge > ageOfUser) {
+    solarYears.howManyYearsSincePastBday(pastBirthdayAge);
+    solarYears.howManyYearsUntilFutureBday(futureBirthdayAge);
+    document.querySelector('#error').innerText = null;
+  } else {
+    document.querySelector('#error').innerText = "Please enter different ages for a past and future birthday.";
+    document.querySelector('#ageCalculations').innerText = null;
+    document.querySelector('#pastBdayCalculations').innerText = null;
+    document.querySelector('#futureBdayCalculations').innerText = null;
+  }
   const earthYears = solarYears.earthYears.toLocaleString();
   const earthYearsPast = solarYears.earthYearsPast.toLocaleString();
   const earthYearsFuture = solarYears.earthYearsFuture.toLocaleString();
