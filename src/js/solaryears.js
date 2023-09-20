@@ -6,10 +6,18 @@ export class SolarYears {
     this.earthYears = 0;
     this.marsYears = 0;
     this.jupiterYears = 0;
+    this.saturnYears = 0;
+    this.uranusYears = 0;
+    this.neptuneYears = 0;
+    this.plutoYears = 0;
     this.mercuryRate = 0.24;
     this.venusRate = 0.62;
     this.marsRate = 1.88;
     this.jupiterRate = 11.86;
+    this.saturnRate = 29.46;
+    this.uranusRate = 84.01;
+    this.neptuneRate = 164.8;
+    this.plutoRate = 248.6;
   }
 
   calculateSolarYears() {
