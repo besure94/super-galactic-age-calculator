@@ -26,6 +26,10 @@ export class SolarYears {
     this.earthYears = parseInt(this.userAge);
     this.marsYears = parseFloat((this.userAge / this.marsRate).toFixed(2));
     this.jupiterYears = parseFloat((this.userAge / this.jupiterRate).toFixed(2));
+    this.saturnYears = parseFloat((this.userAge / this.saturnRate).toFixed(2));
+    this.uranusYears = parseFloat((this.userAge / this.uranusRate).toFixed(2));
+    this.neptuneYears = parseFloat((this.userAge / this.neptuneRate).toFixed(2));
+    this.plutoYears = parseFloat((this.userAge / this.plutoRate).toFixed(2));
   }
 
   howManyYearsSincePastBday(pastBdayAge) {
