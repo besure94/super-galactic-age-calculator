@@ -27,9 +27,21 @@ function handleSolarYearsForm(event) {
   const venusYears = solarYears.venusYears.toLocaleString();
   const venusYearsPast = solarYears.venusYearsPast.toLocaleString();
   const venusYearsFuture = solarYears.venusYearsFuture.toLocaleString();
-  document.querySelector('#ageCalculations').innerText = `You are ${earthYears} years old. \n You are ${mercuryYears} years old on Mercury. \n You are ${venusYears} years old on Venus. \n You are ${marsYears} years old on Mars. \n You are ${jupiterYears} years old on Jupiter.`;
-  document.querySelector('#pastBdayCalculations').innerText = `It has been ${earthYearsPast} years since your past birthday. \n It has been ${mercuryYearsPast} Mercury years since your past birthday. \n It has been ${venusYearsPast} Venus years since your past birthday. \n It has been ${marsYearsPast} Mars years since your past birthday. \n It has been ${jupiterYearsPast} Jupiter years since your past birthday.`;
-  document.querySelector('#futureBdayCalculations').innerText = `It will be ${earthYearsFuture} years until your future birthday. \n It will be ${mercuryYearsFuture} Mercury years until your future birthday. \n It will be ${venusYearsFuture} Venus years until your future birthday. \n It will be ${marsYearsFuture} Mars years until your future birthday. \n It will be ${jupiterYearsFuture} Jupiter years until your future birthday.`;
+  const saturnYears = solarYears.saturnYears.toLocaleString();
+  const saturnYearsPast = solarYears.saturnYearsPast.toLocaleString();
+  const saturnYearsFuture = solarYears.saturnYearsFuture.toLocaleString();
+  const uranusYears = solarYears.uranusYears.toLocaleString();
+  const uranusYearsPast = solarYears.uranusYearsPast.toLocaleString();
+  const uranusYearsFuture = solarYears.uranusYearsFuture.toLocaleString();
+  const neptuneYears = solarYears.neptuneYears.toLocaleString();
+  const neptuneYearsPast = solarYears.neptuneYearsPast.toLocaleString();
+  const neptuneYearsFuture = solarYears.neptuneYearsFuture.toLocaleString();
+  const plutoYears = solarYears.plutoYears.toLocaleString();
+  const plutoYearsPast = solarYears.plutoYearsPast.toLocaleString();
+  const plutoYearsFuture = solarYears.plutoYearsFuture.toLocaleString();
+  document.querySelector('#ageCalculations').innerText = `You are ${earthYears} years old. \n You are ${mercuryYears} years old on Mercury. \n You are ${venusYears} years old on Venus. \n You are ${marsYears} years old on Mars. \n You are ${jupiterYears} years old on Jupiter. \n You are ${saturnYears} years old on Saturn. \n You are ${uranusYears} years old on Uranus. \n You are ${neptuneYears} years old on Neptune. \n You are ${plutoYears} years old on Pluto.`;
+  document.querySelector('#pastBdayCalculations').innerText = `It has been ${earthYearsPast} years since your past birthday. \n It has been ${mercuryYearsPast} Mercury years since your past birthday. \n It has been ${venusYearsPast} Venus years since your past birthday. \n It has been ${marsYearsPast} Mars years since your past birthday. \n It has been ${jupiterYearsPast} Jupiter years since your past birthday. \n It has been ${saturnYearsPast} Saturn years since your past birthday. \n It has been ${uranusYearsPast} Uranus years since your past birthday. \n It has been ${neptuneYearsPast} Neptune years since your past birthday. \n It has been ${plutoYearsPast} Pluto years since your past birthday.`;
+  document.querySelector('#futureBdayCalculations').innerText = `It will be ${earthYearsFuture} years until your future birthday. \n It will be ${mercuryYearsFuture} Mercury years until your future birthday. \n It will be ${venusYearsFuture} Venus years until your future birthday. \n It will be ${marsYearsFuture} Mars years until your future birthday. \n It will be ${jupiterYearsFuture} Jupiter years until your future birthday. \n It will be ${saturnYearsFuture} Saturn years until your future birthday. \n It will be ${uranusYearsFuture} Uranus years until your future birthday. \n It will be ${neptuneYearsFuture} Neptune years until your future birthday. \n It will be ${plutoYearsFuture} Pluto years until your future birthday.`;
 }
 
 window.addEventListener("load", function() {
