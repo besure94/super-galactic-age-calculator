@@ -1,0 +1,40 @@
+body {
+  background-color: #1C2851;
+}
+
+container {
+  text-align: center;
+}
+
+h1 {
+  color: #AF1E1A;
+}
+
+label {
+  color: #AF1E1A;
+}
+
+input {
+  color: #1C2851;
+}
+
+button {
+  background-color: #AF1E1A;
+  color: #1C2851;
+}
+
+p#ageCalculations {
+  color: #AF1E1A;
+}
+
+p#pastBdayCalculations {
+  color: #AF1E1A;
+}
+
+p#futureBdayCalculations {
+  color: #AF1E1A;
+}
+
+p#error {
+  color: #AF1E1A;
+}
