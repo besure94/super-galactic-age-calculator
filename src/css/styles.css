@@ -1,0 +1,54 @@
+body {
+  background-color: #1C2851;
+}
+
+h1 {
+  color: #AF1E1A;
+  text-align: left;
+  font-family: monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+label {
+  color: #AF1E1A;
+  font-size: medium;
+  font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+}
+
+input {
+  color: #1C2851;
+  font-weight: 800;
+  background-color: #BBBFCB;
+}
+
+button {
+  background-color: #AF1E1A;
+  color: #1C2851;
+  font-weight: 800;
+}
+
+p#ageCalculations {
+  color: #AF1E1A;
+  font-weight: 800;
+  font-size: medium;
+}
+
+p#pastBdayCalculations {
+  color: #AF1E1A;
+  font-weight: 800;
+  font-size: medium;
+}
+
+p#futureBdayCalculations {
+  color: #AF1E1A;
+  font-weight: 800;
+  font-size: medium;
+}
+
+p#error {
+  color: #AF1E1A;
+  font-weight: 800;
+  font-size: medium;
+}
