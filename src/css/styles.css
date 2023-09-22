@@ -32,19 +32,23 @@ button {
 p#ageCalculations {
   color: #AF1E1A;
   font-weight: 800;
+  font-size: medium;
 }
 
 p#pastBdayCalculations {
   color: #AF1E1A;
   font-weight: 800;
+  font-size: medium;
 }
 
 p#futureBdayCalculations {
   color: #AF1E1A;
   font-weight: 800;
+  font-size: medium;
 }
 
 p#error {
   color: #AF1E1A;
   font-weight: 800;
+  font-size: medium;
 }
