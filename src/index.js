@@ -10,7 +10,6 @@ function handleSolarYearsForm(event) {
   const futureBirthdayAge = parseInt(document.querySelector('#futureBdayAge').value);
   const solarYears = new SolarYears(ageOfUser);
   solarYears.calculateSolarYears();
-  // writing 'if' statement to account for edge case of a user entering a past bday or future bday age that is older or younger than their current age.
   if (ageOfUser > pastBirthdayAge && futureBirthdayAge > ageOfUser) {
     solarYears.howManyYearsSincePastBday(pastBirthdayAge);
     solarYears.howManyYearsUntilFutureBday(futureBirthdayAge);
